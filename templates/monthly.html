@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Report</title>
+</head>
+<body>
+    <div>
+        <h3>Hey {{user.name}}! </h3>
+        <h3> Please find the report for last month.</p>
+        {% if songs %}
+        <h4>New Songs Created</h4>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Sr. No.</th>
+                    <th>Song Name</th>
+                    <th>Created Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for song in songs %}
+                <tr>
+                    <td>{{ loop.index }}</td>
+                    <td>{{ song.song_title }}</td>
+                    <td>{{ song.song_creation_date }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <h4>No new song added last month.</h4>
+        {% endif %}
+        <br>
+        {% if albums %}
+        <h4>New Albums Created</h4>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Sr. No.</th>
+                    <th>Album Name</th>
+                    <th>Created Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for album in albums %}
+                <tr>
+                    <td>{{ loop.index }}</td>
+                    <td>{{ album.album_name }}</td>
+                    <td>{{ album.album_creation_date }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <h4>No new album created last month.</h4>
+        {% endif %}
+        <br>
+
+        {% if song_ratings %}
+        <h4>New Ratings received for Songs</h4>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Sr. No.</th>
+                    <th>Song Name</th>
+                    <th>Ratings Received</th>
+                    <th>Current Avg Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for song in song_ratings %}
+                <tr>
+                    <td>{{ loop.index }}</td>
+                    <td>{{ song.song_title }}</td>
+                    <td>{{ song.rating }}</td>
+                    <td>{{ song.avg_rating }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <h4>No new rating given for Songs last month</h4>
+        {% endif %}
+        <br>
+        {% if album_ratings %}
+        <h4>New Ratings received for Albums</h4>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Sr. No.</th>
+                    <th>Album Name</th>
+                    <th>Ratings Received</th>
+                    <th>Current Avg Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for album in album_ratings %}
+                <tr>
+                    <td>{{ loop.index }}</td>
+                    <td>{{ album.album_name }}</td>
+                    <td>{{ album.rating }}</td>
+                    <td>{{ album.avg_rating }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <h4>No new rating given for Albums last month</h4>
+        {% endif %}
+
+        <br>
+        <p>Regards,</p>
+        <p>Music Stream Team</p>
+
+    </div>
+</body>
+</html>

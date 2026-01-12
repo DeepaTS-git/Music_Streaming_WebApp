@@ -1,0 +1,172 @@
+nav{
+  display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space items evenly in the container */
+    height: auto;
+    background-color: rgb(71, 68, 68);
+    overflow: hidden;
+    text-align: center;
+    padding: 0 15px; /* Adjust padding */
+    font-size: 17px;
+    color: #f2f2f2;
+}
+
+nav a, nav form, nav p {
+  margin: 5px 0; /* Add margin to separate links and form */
+}
+
+#appname{
+    width: auto;
+    background-color: rgb(15, 127, 88);
+    font-size: 24px;
+    color: #f4f5ef;
+    height: auto;
+    font-weight: bold;
+    font-family: 'Roboto Condensed';
+}
+
+body{
+  /* background-color: #cddad9; */
+  margin: 1%;
+}
+
+  #error {
+    color: red;
+    font-size: 18px;
+    font-weight: 500
+  }
+
+  /* .song li{
+    background: #ba7f7f;
+    column-span:all ;
+  } */
+
+  /* .modify_song li{
+      font: optional;
+      text-align: center;
+      list-style: none;
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      border: 2px solid #131010;
+      border-radius: 4px;
+      overflow-x: auto; Enable horizontal scrolling
+      white-space: nowrap;
+      display: inline-block;
+      height: 100px;
+      width: 200px;
+  } */
+
+  /* .modify_song a{
+    height: 20px;
+      width: auto;
+      border: 2px solid #131010;
+      border-radius: 4p
+  } */
+
+  /* .modify_song{
+    
+      display: inline-block;
+  } */
+.play_song{
+  margin-left: 1% ;
+  /* align-items: center; */
+  overflow-x: auto;
+  white-space: nowrap;
+  display: inline-block;
+  background-color: rgb(237, 234, 198);
+  border: 2px solid #131010;
+  border-radius: 4px;
+}
+.play_song p{
+  font: optional;
+  font-weight: bold;
+}
+
+  .play_song li{
+    font: optional;
+    text-align: center;
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap;
+    display: inline-block;
+    height: 100px;
+    width: 250px;
+}
+
+.play_song a{
+  height: 20px;
+    width: auto;
+    /* border: 2px solid #131010;
+    border-radius: 4p */
+}
+
+
+
+/* .playlist li{
+  font: optional;
+  text-align: center;
+  list-style: none;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  border: 2px solid #131010;
+  border-radius: 4px;
+  overflow-x: auto;  Enable horizontal scrolling 
+  white-space: nowrap;
+  display: inline-block;
+  height: 90px;
+  width: 200px;
+}
+
+.playlist a{
+  height: 20px;
+    width: auto;
+    border: 2px solid #131010;
+    border-radius: 4p
+} */
+
+.scroll-container {
+  overflow-x: auto; /* Add horizontal scrolling */
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+.custom-input {
+  width: 50%; /* Adjust the width as needed */
+  /* margin-bottom: 10px; Optional: Add some margin for spacing */
+}
+
+.stats li{
+  background-color: rgb(234, 231, 190);
+  font: optional;
+    text-align: center;
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap;
+    display: inline-block;
+    height: 100px;
+    width: 200px;
+    border: 2px solid #131010;
+    border-radius: 4p
+ }
+
+ .stats p{
+  font: optional;
+  font-weight: bold;
+}
+
+.stats span{
+  
+  font-weight: bold;
+}
